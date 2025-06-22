@@ -28,7 +28,5 @@ phases:
 
 artifacts:
   files:
-    - appspec.yml
-    - simple-python/**/*  # keep as-is
-  base-directory: .       # include everything including `simple-python/`
-
+    - '**/*'
+  base-directory: simple-python
