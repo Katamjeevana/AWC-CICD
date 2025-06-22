@@ -28,5 +28,6 @@ phases:
 
 artifacts:
   files:
-    - '**/*'
-  base-directory: simple-python
+    - appspec.yml
+    - scripts/**/*       # if scripts is at root
+    - simple-python/**/*
