@@ -23,8 +23,10 @@ phases:
       - docker build -t "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:latest" .
       - docker push "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-flask-app:latest"
   post_build:
-    commands:
-      - echo "Build completed successfully!"
+  commands:
+    - echo "Listing files in the artifact before upload:"
+    - ls -R
+
 
 artifacts:
   files:
